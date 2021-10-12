@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".regextrySelf">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:minHeight="1200dp">
+
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#D7ACDD" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/view5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="41dp"
+                android:layout_marginRight="41dp"
+                android:layout_marginBottom="13dp"
+                android:scrollbarSize="35dp"
+                android:text="Automata Tutor"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="75dp"
+                android:layout_height="53dp"
+                android:layout_alignBottom="@+id/view5"
+                android:layout_marginBottom="6dp"
+                app:srcCompat="@drawable/backiconimg" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view5"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="123dp"
+                android:layout_marginLeft="123dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="-53dp"
+                android:layout_marginRight="-53dp"
+                android:text="Regular Expression"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="107dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/view5"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="94dp"
+                android:layout_marginEnd="281dp"
+                android:layout_marginRight="281dp"
+                android:text="Regex"
+                android:textSize="19dp" />
+
+            <EditText
+                android:id="@+id/txtregexUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="54dp"
+                android:layout_marginRight="54dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnShowGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="162dp"
+                android:layout_marginEnd="137dp"
+                android:layout_marginRight="137dp"
+                android:onClick="ValidateRegex"
+                android:text="Validate" />
+
+            <TextView
+                android:id="@+id/outputText"
+                android:layout_width="284dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnShowGraph"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="38dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="98dp"
+                android:layout_marginEnd="89dp"
+                android:layout_marginRight="89dp"
+                android:text="Random Words"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnShowGraph"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="41dp"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="140dp"
+                android:layout_marginRight="140dp"
+                android:text="Accepted Words" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnShowGraph"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="142dp"
+                android:layout_marginRight="142dp"
+                android:text="Save"
+                android:onClick="saveGraph"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

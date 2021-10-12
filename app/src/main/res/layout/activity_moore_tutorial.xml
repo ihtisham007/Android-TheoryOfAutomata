@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MooreTutorial">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:minHeight="1200dp">
+
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#D7ACDD" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/view5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="41dp"
+                android:layout_marginRight="41dp"
+                android:layout_marginBottom="26dp"
+                android:scrollbarSize="35dp"
+                android:text="Automata Tutor"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="75dp"
+                android:layout_height="53dp"
+                android:layout_alignBottom="@+id/view5"
+                android:layout_marginBottom="22dp"
+                app:srcCompat="@drawable/backiconimg" />
+
+            <View
+                android:id="@+id/VIEWbckk"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/view5"
+                android:layout_marginTop="-14dp"
+                android:background="@drawable/firstbackimg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/VIEWbckk"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="137dp"
+                android:layout_marginRight="137dp"
+                android:layout_marginBottom="52dp"
+                android:text="Moore Machine "
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TextDefiinition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/VIEWbckk"
+                android:text="Moore Machine:"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/definition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextDefiinition"
+                android:text="Moore machines are finite state machines with output value and its output
+depends only on present state."
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/TextDefiinition2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/definition"
+                android:text="More about Moore Machine"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/definition2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextDefiinition2"
+                android:text="It can be defined as (Q, q0, ∑, O, δ, λ) where: \n\n
+1. Q is finite set of states.\n\n
+2. q0 is the initial state.\n\n
+3.  ∑ is the input alphabet.\n\n
+4. O is the output alphabet.\n\n
+5. δ  is transition function which maps Q×∑ → Q.\n\n
+6. λ is the output function which maps Q → O."
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/TEXTmOREPOINTS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/definition2"
+                android:text="Important points about Moore Machine"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/morepoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TEXTmOREPOINTS"
+                android:text="1.Output depends only upon the present state.
+            \n\n
+2. Generally, it has more states than Mealy Machine.\n\n
+"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="19dp"/>
+
+            <TextView
+                android:id="@+id/TextExp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/morepoints"
+                android:text="Example:"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/TextExpDEtail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextExp"
+                android:text="Input\n101\nStates: q0q1q0q1\nOutput: 0010"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="19dp"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/TransDiag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextExpDEtail"
+                android:text="Transition Diagram"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="19dp"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/transIMG"
+                android:layout_width="match_parent"
+                android:layout_height="147dp"
+                android:layout_below="@+id/TransDiag"
+                android:layout_marginTop="37dp"
+                android:src="@drawable/mooreexp1"
+                app:srcCompat="@drawable/mooreexp1" />
+            <!---->
+            <Button
+                android:id="@+id/trybtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Try your self"
+                android:layout_below="@+id/transIMG"
+                android:layout_centerHorizontal="true"
+                android:onClick="openMooreTrySelf"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NfaTutorial">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:minHeight="1200dp">
+
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#D7ACDD" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/view5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="41dp"
+                android:layout_marginRight="41dp"
+                android:layout_marginBottom="26dp"
+                android:scrollbarSize="35dp"
+                android:text="Automata Tutor"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="75dp"
+                android:layout_height="53dp"
+                android:layout_alignBottom="@+id/view5"
+                android:layout_marginBottom="22dp"
+                app:srcCompat="@drawable/backiconimg" />
+
+            <View
+                android:id="@+id/VIEWbckk"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/view5"
+                android:layout_marginTop="-14dp"
+                android:background="@drawable/firstbackimg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/VIEWbckk"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="66dp"
+                android:layout_marginRight="66dp"
+                android:layout_marginBottom="52dp"
+                android:text="Non-deterministic finite automata"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/TextDefiinition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/VIEWbckk"
+                android:text="Definition"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/definition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextDefiinition"
+                android:text="NFA stands for non-deterministic finite automata.
+It is used to transmit any number of states for a particular input.
+It can accept the null move."
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/TEXTmOREPOINTS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/definition"
+                android:text="Some important points about DFA and NFA:"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/morepoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TEXTmOREPOINTS"
+                android:text="Every DFA is NFA, but NFA is not DFA.
+There can be multiple final states in both NFA and DFA.
+DFA is used in Lexical Analysis in Compiler.
+NFA is more of a theoretical concept."
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="19dp"/>
+
+            <TextView
+                android:id="@+id/TextExp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/morepoints"
+                android:text="Example:"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/TextExpDEtail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextExp"
+                android:text="Regex\n\nab"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="19dp"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/TransDiag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextExpDEtail"
+                android:text="Transition Diagram"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="19dp"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/transIMG"
+                android:layout_width="match_parent"
+                android:layout_height="147dp"
+                android:layout_below="@+id/TransDiag"
+                android:layout_marginTop="37dp"
+                android:src="@drawable/nfaexpab1" />
+            <!---->
+            <Button
+                android:id="@+id/trybtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Try your self"
+                android:layout_below="@+id/transIMG"
+                android:layout_centerHorizontal="true"
+                android:onClick="openTryNFA"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MooreTrySelf">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:minHeight="1200dp">
+
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#D7ACDD" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/view5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="41dp"
+                android:layout_marginRight="41dp"
+                android:layout_marginBottom="13dp"
+                android:scrollbarSize="35dp"
+                android:text="Automata Tutor"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="75dp"
+                android:layout_height="53dp"
+                android:layout_alignBottom="@+id/view5"
+                android:layout_marginBottom="6dp"
+                app:srcCompat="@drawable/backiconimg" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view5"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="111dp"
+                android:layout_marginLeft="111dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="-41dp"
+                android:layout_marginRight="-41dp"
+                android:text="Moore Machine Graph"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view5"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="533dp"
+                android:layout_marginEnd="300dp"
+                android:layout_marginRight="300dp"
+                android:text="Input"
+                android:textSize="19dp" />
+
+            <EditText
+                android:id="@+id/txtInputUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="526dp"
+                android:layout_marginEnd="73dp"
+                android:layout_marginRight="73dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnShowGraphMoore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="586dp"
+                android:layout_marginEnd="112dp"
+                android:layout_marginRight="112dp"
+                android:onClick="ShowGraph"
+                android:text="Show Ouput" />
+
+            <ImageView
+                android:id="@+id/imgShowGraphMoore"
+                android:layout_width="match_parent"
+                android:layout_height="393dp"
+                android:layout_below="@+id/view5"
+                android:layout_marginTop="131dp"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <Spinner
+                android:id="@+id/spinnerMoore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="21dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view5"
+                android:layout_marginTop="31dp"
+                android:text="Select topic" />
+
+            <TextView
+                android:id="@+id/txtViewStates123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnShowGraphMoore"
+                android:layout_marginTop="57dp"
+                android:text="States"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txtViewStates"
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnShowGraphMoore"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="39dp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_toEndOf="@+id/txtViewStates123"
+                android:layout_toRightOf="@+id/txtViewStates123"
+                android:text="TextView"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtViewStates1234"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtViewStates123"
+                android:layout_marginTop="76dp"
+                android:text="Output"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtViewOutput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtViewStates"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="89dp"
+                android:layout_marginLeft="89dp"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="188dp"
+                android:layout_marginRight="188dp"
+                android:layout_toEndOf="@+id/txtViewStates1234"
+                android:layout_toRightOf="@+id/txtViewStates1234"
+                android:text="TextView"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerMoore"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="152dp"
+                android:layout_marginRight="152dp"
+                android:text="Save"
+                android:onClick="saveFile"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

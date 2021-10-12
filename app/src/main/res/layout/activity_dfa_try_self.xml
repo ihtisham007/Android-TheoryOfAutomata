@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DfaTrySelf">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:minHeight="1200dp">
+
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#D7ACDD" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/view5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="41dp"
+                android:layout_marginRight="41dp"
+                android:layout_marginBottom="13dp"
+                android:scrollbarSize="35dp"
+                android:text="Automata Tutor"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="75dp"
+                android:layout_height="53dp"
+                android:layout_alignBottom="@+id/view5"
+                android:layout_marginBottom="6dp"
+                app:srcCompat="@drawable/backiconimg" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view5"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="46dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:text="Regular Expression To Dfa"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="107dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/view5"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="96dp"
+                android:layout_marginEnd="281dp"
+                android:layout_marginRight="281dp"
+                android:text="Regex"
+                android:textSize="19dp" />
+
+            <EditText
+                android:id="@+id/txtregexUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="54dp"
+                android:layout_marginRight="54dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnShowGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="148dp"
+                android:layout_marginEnd="115dp"
+                android:layout_marginRight="115dp"
+                android:onClick="ShowGraph"
+                android:text="Show Graph" />
+
+            <ImageView
+                android:id="@+id/imgShowGraph"
+                android:layout_width="match_parent"
+                android:layout_height="438dp"
+                android:layout_below="@+id/view5"
+                android:layout_marginTop="260dp"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtregexUser"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="136dp"
+                android:layout_marginRight="136dp"
+                android:text="Save"
+                android:onClick="saveFIle"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
